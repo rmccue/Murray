@@ -1,0 +1,82 @@
+body { font-family:sans-serif; margin:0; background:url(http://ryanmccue.info/background.png); }
+a:link, a:visited, ul#stream li.markdown blockquote a, ul#stream li.reddit a { color:#0058c2; text-decoration:none; }
+a:visited { opacity:.5; }
+a:hover { text-decoration:underline; }
+h2 { margin-bottom:1.5em; }
+h3 { margin-top:1.5em; }
+
+#info, #content {
+	position: absolute;
+	top: 40px;
+	margin: 0;
+	padding-top: 20px;
+}
+	#info {
+		width: 230px;
+		padding-left: 50px;
+		padding-right: 20px;
+		text-align: right;
+		font-size: 12px;
+		z-index: 5;
+	}
+		#info ul { margin:0; }
+		#info li { list-style:none; margin-top:.5em; }
+		#info footer { opacity: 0.75; margin-top: 20px; font-size:10px; }
+		#info footer:hover { opacity: 1; }
+
+	#content {
+		padding-left: 300px;
+		background: #fff;
+		background: rgba(255, 255, 255, 0.75);
+	}
+
+#stream {
+	margin:0;
+	padding:0;
+}
+	#stream a, #stream a:visited { text-decoration:none; color:#012 }
+		#stream a:hover { text-decoration:underline }
+
+	#stream li time { color:#aaa; visibility:hidden; }
+		#stream li:hover time { visibility:visible; }
+
+	#stream p { margin:0; }
+	#stream blockquote { margin:0; }
+
+	#stream > li {
+		font-size:13px;
+		list-style:none;
+		padding:3px 0 3px 32px;
+		margin-bottom:5px;
+		border-left:6px solid #ccc;
+		margin-left: 8px;
+		background: transparent 5px 3px no-repeat;
+	}
+		#stream > li.journal  { border-left-color:#77c0de; background-image: url(http://chromakode.com/static/favicon.png); }
+		#stream > li.github   { border-left-color:#000000; background-image: url(github.ico); }
+		#stream > li.lastfm   { border-left-color:#ee4229; background-image: url(lastfm.ico); }
+		#stream > li.twitter  { border-left-color:#9ae4e8; background-image: url(twitter.ico); }
+		#stream > li.reddit   { border-left-color:#ff8b60; background-image: url(reddit.ico); }
+
+		#stream li.github div, #stream li.github div a { color:#777; }
+		#stream li.github div a { font-weight:bold; }
+		#stream li.github .message { color:#444; }
+		#stream li.github .commits > ul { padding-left:0px; }
+		#stream li.github .commits > ul li { font-size:12px; list-style:none; border:0; padding:0 14px 0 0; margin:2px 0 0; }
+		#stream li.github .more { display:none; }
+
+		#stream li.lastfm ul { padding-left:0px; }
+		#stream li.lastfm li { font-size:12px; list-style:none; border:0; padding:0 14px 0 0; margin:2px 0 0; }
+		#stream li.lastfm div a { color:#777; }
+
+		#stream li.twitter { position:relative; }
+		#stream li.twitter blockquote { display:inline-block; background:#fff; border:1px solid #aaa; padding:5px; }
+		#stream li.twitter blockquote:before, #stream li.twitter blockquote:after { content:''; position:absolute; display:block; border:solid 7px; }
+		#stream li.twitter blockquote:before { top:10px; left:18px; border-color:transparent #aaa transparent transparent; }
+		#stream li.twitter blockquote:after { top:10px; left:19px; border-color:transparent white transparent transparent; }
+
+		#stream li.markdown blockquote h1 { font-size:2em; margin-top:.25em; margin-bottom:0; }
+		#stream li.markdown blockquote h2 { font-size:1.5em; margin-bottom:.5em; }
+		#stream li.markdown blockquote ul { padding-left:1.5em; }
+		#stream li.markdown blockquote hr { border:none; border-bottom:1px dotted #777; }
+
